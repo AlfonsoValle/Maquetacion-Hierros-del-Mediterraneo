@@ -1,5 +1,6 @@
 @import url("https://cdn.jsdelivr.net/npm/@xz/fonts@1/serve/metropolis.min.css");
 @import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 
 /* Pequeño reset de estilos por defecto */
 * {
@@ -19,7 +20,8 @@
 	--color-dark: #343c44;
 	--color-green: #3aa76d;
 	--color-yellow: #ffbe3d;
-	--boton-azul: #7480ff;
+	--color-gris: #e8ecef;
+	--boton-azul: #2878cd;
 	--boton-blanco: #fbfbfb;
 	--boton-negro: #343c44;
 	--boton-verde: #3aa76d;
@@ -46,7 +48,7 @@ h1 {
 
 h3 {
 	color: #3b4b5b;
-	font-weight: 400;
+	font-weight: 600;
 	font-size: 25px;
 	font-weight: 0, 400;
 }
@@ -81,27 +83,27 @@ h3 {
 .formandlogo {
 	display: flex;
 	justify-content: space-evenly;
+	
 }
 
 .logocontainer {
-	width: 50%;
+	width: 30%;
 	height: 100%;
 }
 
 .logo {
-	width: 400px;
-	margin-top: 60px;
+	width: 303px;
+	height: 59px;
+	margin-top: 81px;
+
 }
 
 .formbox {
 	display: flex;
 	flex-direction: column;
-	justify-content: center;
 	align-items: center;
-	background-color: white;
 	width: 600px;
-	padding-bottom: 30px;
-	margin-top: 200px;
+	margin-top: 174px;
 }
 
 .form-header {
@@ -118,10 +120,11 @@ h3 {
 }
 
 .item-list {
-	padding-top: 25px;
+	padding-top: 14px;
+	line-height: 29px;
 	display: flex;
 	flex-direction: column;
-	gap: 18px;
+	gap: 14px;
 }
 
 .items {
@@ -134,8 +137,97 @@ h3 {
 	font-weight: 700;
 }
 
-@media screen and (max-width: 480px) {
+.formtop {
+	background-color: white;
+	padding-top: 17px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding-left: 25px;
+	padding-bottom: 30px;
+	width: 590px;
 }
+.formbottom {
+	display: flex;
+	flex-direction: column;
+	background-color: var(--color-gris);
+	padding-left: 35px;
+	padding-right: 31px;
+	padding-bottom: 23px;
+	width: 590px;
+}
+
+#info {
+	color: --fondo-ligero;
+	font-style: normal;
+	font-weight: 700;
+	font-size: 30px;
+	line-height: 35px;
+	padding-left: 15px;
+	padding-top: 22px;
+}
+
+.maininputs {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	gap: 17px;
+	margin-top: 15px;
+}
+
+.input {
+	width: 244px;
+	height: 45px;
+	font-family: "Roboto";
+	border-radius: 5px;
+	padding: 13px;
+	border-color: transparent;
+}
+.namelastname {
+	display: flex;
+	gap: 10px;
+}
+
+.telemail {
+	display: flex;
+	gap: 10px;
+}
+
+.contactar {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding-top: 20px;
+}
+.contactbutton {
+	margin-top: 3px;
+	background-color: var(--boton-azul);
+	border-color: transparent;
+	border-radius: 5px;
+	width: 500px;
+	padding: 12px 0;
+	display: flex;
+	justify-content: center;
+	color: white;
+	font-weight: 700;
+	font-size: 25px;
+	line-height: 29px;
+}
+
+.checkbox {
+	padding-top: 20px;
+	display: flex;
+	white-space: nowrap;
+	flex-direction: row;
+	color: var(--fondo-ligero);
+	font-weight: 400;
+	line-height: 15px;
+	font-size: 13px;
+	font-family: "Roboto";
+}
+
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 480px) {

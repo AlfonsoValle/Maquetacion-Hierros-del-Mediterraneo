@@ -29,37 +29,69 @@
       </header>
       <div class=formandlogo>
 
-<div class="logocontainer">
-         <img class="logo" src="img\grupomediterraneoazul.svg" alt="">
-      </div>
+         <div class="logocontainer">
+            <img class="logo" src="img\grupomediterraneoazul.svg" alt="">
+         </div>
+
          <div class="formbox">
 
-            <div class="form-header">
-               <p>Especialistas en</p>
-               <p class="upperandbluetext">PANELES SÁNDWICH</p>
-               <p>para tu proyecto</p>
+            <div class="formtop">
+               <div class="form-header">
+                  <p>Especialistas en</p>
+                  <p class="upperandbluetext">PANELES SÁNDWICH</p>
+                  <p>para tu proyecto</p>
+               </div>
+
+               <div class="item-list">
+
+                  <div class="items"> <img class="check" src="img\check.svg" alt="">
+                     <h3> Productos certificados</h3>
+                  </div>
+                  <div class="items"> <img class="check" src="img\check.svg" alt="">
+                     <h3> Gran stock disponible </h3>
+                  </div>
+                  <div class="items"> <img class="check" src="img\check.svg" alt="">
+                     <h3> Entrega rápida </h3>
+                  </div>
+                  <div class="items"> <img class="check" src="img\check.svg" alt="">
+                     <h3> Asesoramiento técnico profesional
+                     </h3>
+                  </div>
+                  <div class="items"> <img class="check" src="img\check.svg" alt="">
+                     <h3> Amplia variedad de colores y medidas </h3>
+                  </div>
+               </div>
             </div>
+            <div class="formbottom">
+               <div>
+                  <p id="info">Solicita información</p>
+               </div>
+               <!-- Aqui el formulario, añadida validacion -->
+               <form class="form">
+                  <div class="maininputs">
 
-            <div class="item-list">
+                     <div class="namelastname">
+                        <input class="input" type="text" id="nombre" placeholder="Nombre*">
+                        <input class="input" type="text" id="apellido" placeholder="Apellidos*">
+                     </div>
+                     <div class="telemail">
 
-               <div class="items"> <img class="check" src="img\check.svg" alt="">
-                  <h3> Productos certificados</h3>
-               </div>
-               <div class="items"> <img class="check" src="img\check.svg" alt="">
-                  <h3> Gran stock disponible </h3>
-               </div>
-               <div class="items"> <img class="check" src="img\check.svg" alt="">
-                  <h3> Entrega rápida </h3>
-               </div>
-               <div class="items"> <img class="check" src="img\check.svg" alt="">
-                  <h3> Asesoramiento técnico profesional
-                  </h3>
-               </div>
-               <div class="items"> <img class="check" src="img\check.svg" alt="">
-                  <h3> Amplia variedad de colores y medidas </h3>
-               </div>
+                        <input class="input" type="tel" name="telefono" pattern="[0-9]{9}" placeholder="Teléfono*"
+                           required ">
+               <input class=" input" type=" email" name="email" placeholder="Email*"
+                           pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$">
+                     </div>
+                  </div>
+
+                  <div class="contactar">
+                     <input class="contactbutton" type="submit" value="Contactar">
+                  </div>
+                  <label class="checkbox">
+                     <input type="checkbox" name="PoliticaDePrivacidad" required> He leído y Acepto las condiciones
+                     Generales y la Política de protección de datos
+                  </label>
+               </form>
             </div>
-
          </div>
       </div>
    </section>
