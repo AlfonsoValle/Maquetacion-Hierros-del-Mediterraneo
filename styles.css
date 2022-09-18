@@ -29,6 +29,7 @@
 	--boton-rojo: #e25822;
 	--boton-morado: #94447c;
 	--boton-gris: #d0cfcf;
+	--fondo-azul: #26598c;
 }
 
 .section1 {
@@ -45,7 +46,9 @@ h1 {
 	font-size: 16px;
 	line-height: 18, 78px;
 }
-
+h2 {
+	color: white;
+}
 h3 {
 	color: #3b4b5b;
 	font-weight: 600;
@@ -351,6 +354,94 @@ h3 {
 .blueband2 {
 	background-color: var(--fondo-ligero);
 	height: 105px;
+}
+
+.section6 {
+	position: relative;
+}
+.map {
+	background-image: url("/img/mapa.png");
+	height: 545px;
+}
+
+.help {
+	background-color: #26598ce8;
+	width: 474px;
+	height: 545px;
+	margin-left: 1061px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.canhelp {
+	color: white;
+	font-size: 40px;
+	line-height: 108%;
+	text-align: center;
+}
+
+.bigtel {
+	font-weight: 700;
+	font-size: 45px;
+	line-height: 108%;
+	text-align: center;
+	color: white;
+}
+
+.contactnow {
+	background-color: white;
+	font-style: normal;
+	font-weight: 600;
+	border-radius: 5px;
+	color: black;
+	font-size: 20px;
+	line-height: 23px;
+	text-align: center;
+	border: none;
+	padding: 15px 19px 15px 19px;
+	margin-top: 24px;
+}
+
+.lastlogo {
+	height: 214px;
+	background-color: var(--fondo-logo);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.logoblanco {
+	height: 73px;
+	width: 373px;
+}
+.containerf {
+	background-color: var(--fondo-ligero);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 50px;
+}
+
+.footerbutton {
+	color: white;
+	text-decoration: none;
+	font-size: 11px;
+}
+
+.tripea {
+	width: 340px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.iconosfooter {
+	width: 340px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
 }
 @media screen and (max-width: 480px) {
 }
