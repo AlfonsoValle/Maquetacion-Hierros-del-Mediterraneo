@@ -33,7 +33,7 @@
 
 .section1 {
 	width: 100%;
-	height: 100vh;
+	height: 1045px;
 	background-image: url("/img/banner.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -282,16 +282,12 @@ h3 {
 .rectangle3 {
 	height: 550px;
 	background-color: var(--fondo-ligero);
-	padding-left: 80px;
-	padding-right: 380px;
+	padding-left: 30px;
+	padding-right: 340px;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-}
-
-.navesection3 {
-	width: 951px;
 }
 
 .section3 {
@@ -309,8 +305,6 @@ h3 {
 	text-align: right;
 }
 
-
-
 #botonsaber {
 	background-color: var(--boton-azul);
 	color: white;
@@ -322,6 +316,42 @@ h3 {
 	margin-top: 26px;
 }
 
+.diamondhand {
+	display: flex;
+	flex-direction: column;
+}
+
+.diamante {
+	height: 62px;
+}
+.mano {
+	height: 34px;
+}
+
+.bannerimages {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	/* para librarme de los bordes blancos entre las imagenes */
+	font-size: 0;
+}
+.imagepanels {
+	width: 610px;
+}
+
+.blueband {
+	background-color: var(--fondo-ligero);
+	height: 95px;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.blueband2 {
+	background-color: var(--fondo-ligero);
+	height: 105px;
+}
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 768px) {
