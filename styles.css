@@ -34,7 +34,7 @@
 
 .section1 {
 	width: 100%;
-	height: 1045px;
+	height: 1080px;
 	background-image: url("/img/banner.png");
 	background-repeat: no-repeat;
 	background-position: center;
@@ -45,6 +45,7 @@ h1 {
 	font-weight: 400;
 	font-size: 16px;
 	line-height: 18, 78px;
+	text-align: center;
 }
 h2 {
 	color: white;
@@ -63,7 +64,7 @@ h3 {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-around;
-	padding: 16px 0 15px 0;
+	padding: 15px 0 15px 0;
 }
 
 .whatslogoandnumber {
@@ -246,6 +247,11 @@ h3 {
 	line-height: 35px;
 }
 
+.titularp {
+text-align: center;;
+
+}
+
 .sectionboxes {
 	display: flex;
 	padding-top: 60px;
@@ -282,21 +288,26 @@ h3 {
 	font-size: 20px;
 }
 
-.rectangle3 {
-	height: 550px;
-	background-color: var(--fondo-ligero);
-	padding-left: 30px;
-	padding-right: 340px;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-}
-
 .section3 {
 	display: flex;
 	align-items: center;
-	flex-direction: row;
+	height: 550px;
+	width: 100%;
+	background-color: var(--fondo-ligero);
+}
+
+#navesection3 {
+	background-image: url("/img/nave.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 100%;
+	width: 50%;
+}
+.rectangle3 {
+	width: 32%;
+	padding-left: 30px;
+	display: flex;
+	flex-direction: column;	
 }
 
 .textonave {
@@ -309,9 +320,10 @@ h3 {
 }
 
 #botonsaber {
+	
 	background-color: var(--boton-azul);
 	color: white;
-	padding: 15px 40px 15px 40px;
+	padding: 15px 4px 15px 4px;
 	font-size: 20px;
 	line-height: 23px;
 	border-radius: 5px;
@@ -339,10 +351,56 @@ h3 {
 	/* para librarme de los bordes blancos entre las imagenes */
 	font-size: 0;
 }
-.imagepanels {
-	width: 610px;
-}
 
+.row {
+	display: flex;
+	width: 100%;
+}
+.imagepanel1 {
+	background-image: url("/img/imagen1.png");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	width: 100%;
+	height: 408px;
+}
+.imagepanel2 {
+	background-image: url("/img/imagen2.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 408px;
+	width: 100%;
+}
+.imagepanel3 {
+	background-image: url("/img/imagen3.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 408px;
+	width: 100%;
+}
+.imagepanel4 {
+	background-image: url("/img/imagen4.png");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 408px;
+	width: 100%;
+}
+.imagepanel5 {
+	background-image: url("/img/imagen5.png");
+	background-repeat: no-repeat;
+	background-position: center;
+
+	height: 408px;
+	width: 100%;
+}
+.imagepanel6 {
+	background-image: url("/img/imagen6.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	height: 408px;
+	width: 100%;
+}
 .blueband {
 	background-color: var(--fondo-ligero);
 	height: 95px;
@@ -358,17 +416,25 @@ h3 {
 
 .section6 {
 	position: relative;
+	width: 100%;
 }
 .map {
 	background-image: url("/img/mapa.png");
+	background-repeat: no-repeat;
+	background-position: center;
 	height: 545px;
+}
+
+.bluebanner {
+	display: flex;
+	justify-content: flex-end;
+	padding-right: 364px;
 }
 
 .help {
 	background-color: #26598ce8;
 	width: 474px;
 	height: 545px;
-	margin-left: 1061px;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -446,6 +512,53 @@ h3 {
 @media screen and (max-width: 480px) {
 }
 @media screen and (max-width: 768px) {
+
+	.section1 {
+		height: 100%;
+	}
+	.container {
+		display: flex;
+		flex-direction: column;
+		align-items:center;
+		justify-content:center;
+	}
+	.formandlogo {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+	}
+	.formbox {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+		width: 600px;
+		margin-top: 17px;
+	}
+
+	.logocontainer {
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items:center;
+		
+	}
+
+	.logo {
+		width: 303px;
+		height: 59px;
+		margin-top: 50px;
+	}
+	
+	.rectangle3 {
+		width: 50%;
+		padding-right: 5px;
+		padding-left: 5px;
+		display: flex;
+		flex-direction: column;	
+	}
+
 }
 @media screen and (max-width: 1200px) {
 }
