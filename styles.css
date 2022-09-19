@@ -3,7 +3,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
-/* Pequeño reset de estilos por defecto */
+/* Style Reset */
 * {
 	box-sizing: border-box;
 	margin: 0;
@@ -11,7 +11,7 @@
 	font-family: "Raleway", sans-serif;
 }
 
-/* Variables para definir colores */
+/* Color Variables  */
 
 :root {
 	--fondo-ligero: #3b4b5b;
@@ -48,6 +48,8 @@ h3 {
 	font-size: 25px;
 	font-weight: 0, 400;
 }
+
+/* section1 */
 
 .section1 {
 	width: 100%;
@@ -161,7 +163,7 @@ h3 {
 	width: 590px;
 }
 
-#info {
+.info {
 	color: --fondo-ligero;
 	font-style: normal;
 	font-weight: 700;
@@ -199,7 +201,7 @@ h3 {
 	gap: 10px;
 }
 
-.contactar {
+.contact {
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -232,12 +234,12 @@ h3 {
 	font-family: "Roboto";
 }
 
-/* section2 */
+/* section2 and section4 */
 
-.rectangle2 {
+.rectangleC {
 	height: 547px;
 }
-#titular {
+.headline {
 	display: flex;
 	padding-top: 60px;
 	flex-direction: column;
@@ -249,7 +251,7 @@ h3 {
 	line-height: 35px;
 }
 
-.titularp {
+.headlinep {
 	text-align: center;
 }
 
@@ -259,7 +261,7 @@ h3 {
 	justify-content: space-evenly;
 }
 
-#logoder {
+.rightpartlogo {
 	margin-left: -40px;
 }
 
@@ -268,7 +270,7 @@ h3 {
 	height: 96px;
 }
 
-.bloques {
+.blocks {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -276,7 +278,7 @@ h3 {
 	width: 349px;
 }
 
-.titularblock {
+.headlineblock {
 	padding-top: 10px;
 	color: black;
 	font-weight: 700;
@@ -289,6 +291,8 @@ h3 {
 	font-size: 20px;
 }
 
+/* section3 */
+
 .section3 {
 	display: flex;
 	align-items: center;
@@ -297,21 +301,21 @@ h3 {
 	background-color: var(--fondo-ligero);
 }
 
-#navesection3 {
+.shedsection3 {
 	background-image: url("/img/nave.png");
 	background-repeat: no-repeat;
 	background-position: center;
 	height: 100%;
 	width: 50%;
 }
-.rectangle3 {
+.rectangleA {
 	width: 32%;
 	padding-left: 30px;
 	display: flex;
 	flex-direction: column;
 }
 
-.textonave {
+.textshed {
 	color: white;
 	font-style: italic;
 	font-weight: 400px;
@@ -320,7 +324,7 @@ h3 {
 	text-align: right;
 }
 
-#botonsaber {
+.knowmorebutton {
 	background-color: var(--boton-azul);
 	color: white;
 	padding: 15px 4px 15px 4px;
@@ -336,10 +340,10 @@ h3 {
 	flex-direction: column;
 }
 
-.diamante {
+.diamond {
 	height: 62px;
 }
-.mano {
+.hand {
 	height: 34px;
 }
 
@@ -348,7 +352,6 @@ h3 {
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	/* para librarme de los bordes blancos entre las imagenes */
 	font-size: 0;
 }
 
@@ -404,6 +407,8 @@ h3 {
 	height: 408px;
 	width: 100%;
 }
+
+/* section5 */
 .blueband {
 	background-color: var(--fondo-ligero);
 	height: 95px;
@@ -481,11 +486,14 @@ h3 {
 	justify-content: center;
 }
 
-.logoblanco {
+.whitelogo {
 	height: 73px;
 	width: 373px;
 }
-.containerf {
+
+/* section6 */
+
+.containerfooter {
 	background-color: var(--fondo-ligero);
 	display: flex;
 	align-items: center;
@@ -505,19 +513,41 @@ h3 {
 	text-align: center;
 }
 
-.tripea {
+.footerbuttons {
 	width: 340px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
 
-.iconosfooter {
+.footericons {
 	width: 340px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 }
+
+/* Media Queries from here > */
+
+@media screen and (max-width: 1700px) {
+	.bluebanner {
+		display: flex;
+		justify-content: flex-end;
+		padding-right: 0px;
+	}
+}
+
+@media screen and (max-width: 1100px) {
+	.blocks {
+		padding-left: 20px;
+		padding-right: 20px;
+	}
+
+	.help {
+		width: 100%;
+	}
+}
+
 @media screen and (max-width: 930px) {
 	.row {
 		display: flex;
@@ -539,11 +569,11 @@ h3 {
 		align-items: center;
 		justify-content: center;
 	}
-	.rectangle2 {
+	.rectangleC {
 		height: 100%;
 	}
 
-	.bloques {
+	.blocks {
 		padding-bottom: 20px;
 	}
 	.sectionboxes {
@@ -554,7 +584,7 @@ h3 {
 		align-items: center;
 	}
 
-	#titular {
+	.headline {
 		padding-top: 40px;
 		padding-bottom: 30px;
 		padding-left: 20px;
@@ -597,7 +627,7 @@ h3 {
 		margin-top: 50px;
 	}
 
-	.rectangle3 {
+	.rectangleA {
 		width: 50%;
 
 		padding-right: 15px;
@@ -605,27 +635,18 @@ h3 {
 		display: flex;
 		flex-direction: column;
 	}
-	.textonave {
+	.textshed {
 		font-size: 20px;
 	}
 }
-@media screen and (max-width: 1100px) {
-	.bloques {
-		padding-left: 20px;
-		padding-right: 20px;
-	}
 
-	.help {
-		width: 100%;
-	}
-}
 @media screen and (max-width: 600px) {
-	.containerf {
+	.containerfooter {
 		height: 100px;
 		gap: 5px;
 	}
 
-	.tripea {
+	.footerbuttons {
 		display: flex;
 		flex-direction: column;
 		align-items: center;
@@ -633,7 +654,7 @@ h3 {
 		gap: 10px;
 	}
 
-	.iconosfooter {
+	.footericons {
 		display: flex;
 		gap: 7px;
 		flex-direction: column;
@@ -673,7 +694,7 @@ h3 {
 		padding-right: 5px;
 		padding-bottom: 23px;
 	}
-	#info {
+	.info {
 		color: --fondo-ligero;
 		font-style: normal;
 		font-weight: 700;
@@ -702,21 +723,3 @@ h3 {
 		border-color: transparent;
 	}
 }
-@media screen and (max-width: 1700px) {
-	.bluebanner {
-		display: flex;
-		justify-content: flex-end;
-		padding-right: 0px;
-	}
-}
-
-/* moviles
-320px - 480 px
-ipads, tabletas
-481 - 768
-pantallas pequenias y portatiles
-769=2-14
-escritorios, pantallas grandes
-1025- 1200
-pantallas de tv
-+1201 */
